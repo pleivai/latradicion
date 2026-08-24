@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>La Tradición</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f7f6f3;
+    --surface:#ffffff;
+    --ink:#1c2330;
+    --ink-soft:#4a5567;
+    --muted:#8a94a3;
+    --rule:#e2ded6;
+    --accent:#8a6d3b;
+    --shadow:0 1px 2px rgba(28,35,48,.04), 0 12px 40px rgba(28,35,48,.06);
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight:300;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:64px 28px 48px;
+  }
+
+  /* ---------- Encabezado ---------- */
+  header{
+    text-align:center;
+    padding-bottom:38px;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .mark{
+    display:block;
+    width:44px;
+    height:1px;
+    margin:0 auto 26px;
+    background:var(--accent);
+  }
+
+  h1{
+    margin:0;
+    font-family:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    font-weight:600;
+    font-size:clamp(2.1rem, 6vw, 3rem);
+    letter-spacing:.02em;
+    line-height:1.15;
+  }
+
+  .tagline{
+    margin:14px 0 0;
+    font-size:.72rem;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  /* ---------- Ficha profesional ---------- */
+  .card{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    box-shadow:var(--shadow);
+    margin-top:48px;
+    padding:44px 42px;
+  }
+
+  .name{
+    margin:0;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-weight:600;
+    font-size:1.85rem;
+    letter-spacing:.01em;
+  }
+
+  .role{
+    margin:8px 0 0;
+    font-size:.7rem;
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:var(--accent);
+  }
+
+  .divider{
+    height:1px;
+    background:var(--rule);
+    margin:34px 0;
+  }
+
+  .cite-label{
+    margin:0 0 14px;
+    font-size:.68rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  blockquote{
+    margin:0;
+    padding-left:24px;
+    border-left:2px solid var(--accent);
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-style:italic;
+    font-size:1.22rem;
+    line-height:1.7;
+    color:var(--ink-soft);
+  }
+
+  blockquote p{margin:0 0 1em;}
+  blockquote p:last-child{margin-bottom:0;}
+
+  /* ---------- Contacto ---------- */
+  .contact{
+    margin-top:48px;
+    text-align:center;
+  }
+
+  .contact .label{
+    display:block;
+    font-size:.68rem;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:10px;
+  }
+
+  .contact a{
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-size:1.5rem;
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:3px;
+    transition:border-color .2s ease, color .2s ease;
+  }
+
+  .contact a:hover{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+  }
+
+  /* ---------- Pie ---------- */
+  footer{
+    margin-top:56px;
+    padding-top:24px;
+    border-top:1px solid var(--rule);
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:space-between;
+    align-items:center;
+    font-size:.78rem;
+    color:var(--muted);
+  }
+
+  footer a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    letter-spacing:.08em;
+    border-bottom:1px solid transparent;
+    transition:color .2s ease, border-color .2s ease;
+  }
+
+  footer a:hover{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+  }
+
+  @media (max-width:560px){
+    .wrap{padding:44px 20px 36px;}
+    .card{padding:32px 24px;}
+    blockquote{font-size:1.1rem;padding-left:18px;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <span class="mark"></span>
+      <h1>La Tradición</h1>
+      <p class="tagline">Estudio Jurídico</p>
+    </header>
+
+    <main class="card">
+      <h2 class="name">Patricio Alfonso Leiva Salinas</h2>
+      <p class="role">Abogado</p>
+
+      <div class="divider"></div>
+
+      <p class="cite-label">Código Civil de la República de Chile &middot; Art. 670</p>
+      <blockquote>
+        <p>La tradición es un modo de adquirir el dominio de las cosas y consiste en la entrega que el dueño hace de ellas a otro, habiendo por una parte la facultad e intención de transferir el dominio, y por otra la capacidad e intención de adquirirlo.</p>
+        <p>Lo que se dice del dominio se extiende a todos los otros derechos reales.</p>
+      </blockquote>
+    </main>
+
+    <section class="contact">
+      <span class="label">Correo</span>
+      <a href="mailto:pleiva@latradicion.cl">pleiva@latradicion.cl</a>
+    </section>
+
+    <footer>
+      <span>La Tradición &middot; Estudio Jurídico</span>
+      <a href="http://mail.google.com/a/latradicion.cl">Correo Interno</a>
+    </footer>
+
+  </div>
+</body>
+</html>
